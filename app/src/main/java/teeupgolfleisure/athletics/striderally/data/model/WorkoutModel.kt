@@ -1,6 +1,11 @@
 package teeupgolfleisure.athletics.striderally.data.model
 
 import androidx.annotation.StringRes
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.DirectionsRun
+import androidx.compose.material.icons.filled.EmojiEvents
+import androidx.compose.material.icons.filled.Groups
+import androidx.compose.material.icons.filled.Terrain
 import androidx.compose.ui.graphics.vector.ImageVector
 import teeupgolfleisure.athletics.striderally.R
 
@@ -20,4 +25,8 @@ enum class Difficulty(@field:StringRes val titleRes: Int, val level: Int) {
 }
 
 enum class WorkoutType(@field:StringRes val titleRes: Int, val icon: ImageVector) {
+    ROAD_RUNNING(R.string.workout_type_road_running_title, Icons.AutoMirrored.Filled.DirectionsRun),
+    TRAIL_RUNNING(R.string.workout_type_trail_running_title, Icons.Filled.Terrain),
+    GROUP_RUNS(R.string.workout_type_group_runs_title, Icons.Filled.Groups),
+    RACE_PREP(R.string.workout_type_race_prep_title, Icons.Filled.EmojiEvents),
 }
