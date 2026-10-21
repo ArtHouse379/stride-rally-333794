@@ -1,0 +1,64 @@
+A project '{targetProjectName}' (package {targetPackageName}, app
+{targetAppName}) was generated in this directory based on the donor
+'{donorRootPath}'. This is a SportTracker-type application.
+
+The topic below may be given in Russian, but all generated content
+(category names, workout names, exercise names, tip titles and
+messages, string resources) must be written in English.
+
+Your task:
+1. Come up with 3 to 4 workout categories for the topic: {topic}. Add
+   string resources for each category.
+   Resource naming convention: workout_type_<category_name>_title.
+2. Replace the current categories in ../data/model/WorkoutModel.kt
+   (the WorkoutType enum) with the ones created above, using the
+   string resources from step 1. Each entry also needs an icon
+   (the icon field) - pick a Material icon that visually matches the
+   category, the same way the existing entries do.
+3. Go through the remaining string resources in strings.xml and
+   rephrase/replace the ones that read as generic with text that fits
+   the topic and the context of the surrounding resources. If a
+   resource already reads naturally for this topic, it's fine to
+   leave it as is - the goal is a cohesive result, not rewriting for
+   its own sake.
+   Keep every replacement roughly as long as the text it replaces -
+   the screen layouts were built around those lengths, and longer text
+   wraps badly or gets truncated on a phone. Buttons, tabs, labels and
+   titles stay short, usually one to three words: do not turn a label
+   into a sentence, and do not add marketing filler, adjective chains,
+   or the company name where the original had none.
+   Exceptions - do not touch:
+   - string resources whose value is already populated from the
+     project configuration (app name, company name, support link, etc.)
+   - resources that are empty
+   - the difficulty_* and intensity_* resources: these label the fixed
+     Difficulty/Intensity enums that the app's filtering and statistics
+     screens rely on, and must keep their current meaning
+     (beginner/intermediate/advanced, low/moderate/high/maximum)
+     regardless of topic.
+4. Fill the workout list in ../data/repository/WorkoutRepository.kt.
+   Minimum 6, maximum 8 WorkoutModel objects. Use all of the categories
+   created in step 2 and all three Difficulty values (Beginner,
+   Intermediate, Advanced) - spread the workouts across them, don't
+   cluster them into just one or two. Each workout needs 4 to 6
+   ExerciseModel objects. For each exercise, set either
+   sets+repetitions or duration (never both), matching how the
+   existing entries pick one or the other depending on the kind of
+   exercise, and choose restDuration and intensity consistently with
+   the surrounding entries.
+   Workout and exercise names must fit the topic: {topic}.
+   For the image link field find a photo of this workout. The app
+   loads the URL straight into an image view, so it must match one of
+   these two shapes exactly:
+   https://images.unsplash.com/photo-<id>
+   https://images.pexels.com/photos/<id>/<name>.jpeg
+   A gallery page URL (unsplash.com/photos/..., pexels.com/photo/...)
+   returns HTML and will not load. Open the photo page you found and
+   take the real image source from it; do not invent ids. Verify with
+   `curl -sIL <url>`: keep the URL only on a 200 with an image/*
+   content-type, otherwise leave the field empty.
+5. Fill the tip list in ../data/repository/TipRepository.kt. Minimum
+   5, maximum 6 TipModel objects. Keep title short (two to four words)
+   and message to one short sentence, in the same style as the
+   existing entries, about sport or health in the context of the
+   topic: {topic}.

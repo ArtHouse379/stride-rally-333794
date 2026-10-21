@@ -1,0 +1,42 @@
+AssetBasedConstructor
+donor: SportTrackerAppDonor (app.sporttracker.donor)
+project: Stride Rally (teeupgolfleisure.athletics.striderally)
+prefix: SDPME
+seed: -3492520668750380895
+app/src/main/java/app/sporttracker/donor/ui/composable/approot/bottombar -> v_locker
+app/src/main/java/app/sporttracker/donor/ui/composable/approot/topbar -> v_arena
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/history/calendar -> v_calendar_2
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/history/card -> v_card_3
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/home/filter/content -> v_dot
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/home/filter/shell -> v_filled
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/home/goalcard -> v_goal_card_3
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/home/layout -> v_tip_first
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/home/tips/content -> v_content_2
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/home/tips/shell -> v_shell_5
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/home/workoutcard/content -> v_badges
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/home/workoutcard/shell -> v_top
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/onboarding/controls/button -> v_button_filled
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/onboarding/controls/indicator -> v_indicator_2
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/onboarding/controls/label -> v_label_plain
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/onboarding/controls/shell -> v_shell_1
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/onboarding/icon -> v_onboarding_icon_6
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/onboarding/text -> v_onboarding_text_1
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/profile/button -> v_reset_button_2
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/profile/card -> v_app_card_6
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/profile/field -> v_field_4
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/profile/fields -> v_fields_2
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/profile/sections -> v_sections_1
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/shared/loadingplaceholder -> v_loadingplaceholder_1
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/shared/sectiontitle -> v_section_title_1
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/splash -> v_splash_4
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/statistics/chart -> v_chart_4
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/statistics/summary/content -> v_content_2
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/statistics/summary/design -> v_columns
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/statistics/summary/shell -> v_shell_1
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/workout/actionblock -> v_action_block_1
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/workout/exercisecard/content -> v_content_2
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/workout/exercisecard/shell -> v_shell_1
+app/src/main/java/app/sporttracker/donor/ui/composable/screen/workout/typedifficulty -> v_type_difficulty_1
+app/src/main/java/app/sporttracker/donor/ui/theme -> v_cp3593
+app/src/main/java/app/sporttracker/donor/ui/theme/dimens -> v_strict
+app/src/main/java/app/sporttracker/donor/ui/theme/typography -> v_font_neutral
